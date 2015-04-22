@@ -64,7 +64,6 @@ This will stop /u/GoldFact from replying/commenting towards your gilded comment 
 If you accidentally ignored or changed your mind on ignoring /u/GoldFact, then you may reestablish contact with him by using this command:
 >obey-/u/GoldFact
 
-=
 #Thanks for reading!
 
 If you would like to test /u/GoldFact, then head over to this [[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ez3/bot_testing/)].
