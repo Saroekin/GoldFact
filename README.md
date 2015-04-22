@@ -14,7 +14,6 @@ To call him, use his name in a comment. Like so:
 
 Notice that capitalization doesn't affect /u/GoldFact's response. 
 
-=
 *(****Note****: The message/comment could include anything text related. As long as /u/GoldFact is mentioned, he will reply with a gold fact.)*
 
 =
@@ -52,7 +51,6 @@ His message will have the same format as follows:
 
 >^If ^you ^would ^like ^to ^read ^or ^learn ^more ^about ^my ^functionalities, ^please ^head ^over ^to ^this ^[[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)].
 
-=
 *(****Note****: At the moment, this is currently in use only at /r/lounge.)*
 
 =
