@@ -54,7 +54,7 @@ His message will have the same format as follows:
 =
 ###Ignoring /u/GoldFact:
 
-If would like /u/GoldFact to not respond to at all (even if you mention his name), then you may type in:
+If would like /u/GoldFact to not respond to at all (even if you mention his name), then you may comment:
 >ignore-/u/GoldFact 
 
 This will stop /u/GoldFact from replying/commenting towards your gilded comment or being summoned via username mention.
