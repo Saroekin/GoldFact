@@ -1,5 +1,6 @@
-# GoldFact
 #Welcome!
+
+I hope you find /u/GoldFact entertaining or helpful.
 
 #How /u/GoldFact is used:
 
