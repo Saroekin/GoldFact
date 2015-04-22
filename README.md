@@ -51,8 +51,6 @@ His message will have the same format as follows:
 
 >^If ^you ^would ^like ^to ^read ^or ^learn ^more ^about ^my ^functionalities, ^please ^head ^over ^to ^this ^[[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)].
 
-*(****Note****: At the moment, this is currently in use only at /r/lounge.)*
-
 =
 ###Ignoring /u/GoldFact:
 
