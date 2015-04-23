@@ -121,7 +121,7 @@ def run_bot_comments_lounge():
                     comment_text = comment.body.lower()
                     if str(comment.author) != Username:
                         randomNum = randint("input num","input num") #: Amount of random numbers taken out so the privacy of /u/GoldFact's fact count is kept exclusive.
-                        commentNum = randint(0,32)
+                        commentNum = randint(0,99)
                         #To add a random factor whilst commenting.
                         if commentNum == 2:
                             comment.reply("Hello there ol' chap! It seems to me that you've been gilded, therefore congratulations! Here's a gold fact to celebrate:" + "\n" + "\n" + ">" + str(goldFactsList[randomNum]) + "\n" + "\n" + "---" + "\n" + "^I ^am ^a ^bot. ^If ^you ^have ^any ^questions ^or ^requests, ^please ^contact ^my ^[[creator](https://www.reddit.com/message/compose/?to=Saroekin&subject=/u/GoldFact)]." + "\n" + "\n" + "^If ^you ^would ^like ^to ^read ^or ^learn ^more ^about ^my ^functionalities, ^please ^head ^over ^to ^this ^[[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)]." + "\n\n" + "^| ^[[Ignore](" + ignore_message + ")] ^| ^[[Obey](" + obey_message + ")] ^| ^[[Source](" + source_link + ")] ^|")
