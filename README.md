@@ -14,7 +14,6 @@ To call him, use his name in a comment. Like so:
 
 Notice that capitalization doesn't affect /u/GoldFact's response. 
 
-=
 *(****Note****: The message/comment could include anything text related. As long as /u/GoldFact is mentioned, he will reply with a gold fact.)*
 
 =
