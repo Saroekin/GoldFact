@@ -19,8 +19,8 @@ cur.execute('CREATE TABLE IF NOT EXISTS total_data(cid_storage TEXT, ignore_auth
 sql.commit()
 
 #User's username and password.
-Username = "GoldFact"
-Password = "csCml456"
+Username = ""
+Password = ""
 
 #What reddit sees from the bot's requests.
 user_agent = "/u/GoldFact is an API by /u/Saroekin. If 'summoned' by a user, /u/GoldFact will reply with a random fact. As well as /u/GoldFact will watch over the gilded section of /r/lounge and /r/all, and congratulate any newly gilded users with a gold fact (not everyone, there's chances behind /u/GoldFact replying to gilded users)."
