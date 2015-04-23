@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# GoldFact
-Once "summoned" by the user, GoldFact (bot) will reply with a random fact.
 =======
 #Welcome!
 
@@ -86,4 +83,3 @@ If you would like to test /u/GoldFact, then head over to this [[thread](https://
 Regards,
 
 Saroekin.
->>>>>>> origin/master
