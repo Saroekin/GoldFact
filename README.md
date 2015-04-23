@@ -31,11 +31,11 @@ Full response example:
 >>Before gold coins were used as money, various types of livestock, particularly cattle, and plant products were used as currency. Additionally, large government construction projects were completed by slave labor due to the limited range of money uses. 
 
 >---
->^I ^am ^a ^bot. ^If ^you ^have ^any ^questions ^or ^requests, ^please ^contact ^my ^[[creator](https://www.reddit.com/message/compose/?to=Saroekin&subject=/u/GoldFact)].
+>I am a bot. If you have any questions or requests, please contact my [[creator](https://www.reddit.com/message/compose/?to=Saroekin&subject=/u/GoldFact)].
 
->^If ^you ^would ^like ^to ^read ^or ^learn ^more ^about ^my ^functionalities, ^please ^head ^over ^to ^this ^[[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)].
+>If you would like to read or learn more about my functionalities, please head over to this [[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)].
 
->^| ^[[Ignore](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact)] ^| ^[[Obey](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] ^| ^[[Source](https://github.com/Saroekin/GoldFact)] ^|
+>| [[Ignore](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact)] | [[Obey](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] | [[Source](https://github.com/Saroekin/GoldFact)] ^|
 
 =
 ###/u/GoldFact commenting:
@@ -52,11 +52,11 @@ His message will have the same format as follows:
 >>When honking geese alerted the Romans that the Gauls were about to attack the temple where the Romans stored their treasure, the grateful Roman citizens built a shrine to Moneta, the goddess of warning. The link between rescued treasure and Moneta led many centuries later to the English words “money” and “mint.” 
 
 >---
->^I ^am ^a ^bot. ^If ^you ^have ^any ^questions ^or ^requests, ^please ^contact ^my ^[[creator](https://www.reddit.com/message/compose/?to=Saroekin&subject=/u/GoldFact)].
+>I am a bot. If you have any questions or requests, please contact my [[creator](https://www.reddit.com/message/compose/?to=Saroekin&subject=/u/GoldFact)].
 
->^If ^you ^would ^like ^to ^read ^or ^learn ^more ^about ^my ^functionalities, ^please ^head ^over ^to ^this ^[[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)].
+>If you would like to read or learn more about my functionalities, please head over to this [[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)].
 
->^| ^[[Ignore](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact)] ^| ^[[Obey](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] ^| ^[[Source](https://github.com/Saroekin/GoldFact)] ^|
+>| [[Ignore](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact)] | [[Obey](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] | [[Source](https://github.com/Saroekin/GoldFact)] ^|
 
 =
 ###Ignoring /u/GoldFact:
