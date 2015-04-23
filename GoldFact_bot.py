@@ -33,8 +33,8 @@ ignore_requests_string = "ignore-/u/goldfact"
 obey_requests_string = "obey-/u/goldfact"
 
 #Message/link variables.
-ignore_message = "https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact"
-obey_message = "https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact"
+ignore_message = "https://www.reddit.com/message/compose/?to=GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact"
+obey_message = "https://www.reddit.com/message/compose/?to=GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact"
 source_link = "https://github.com/Saroekin/GoldFact"
 
 #Function for running (is defining) bot.
