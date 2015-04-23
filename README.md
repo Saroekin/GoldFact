@@ -40,7 +40,6 @@ Full response example:
 
 If you're comment was recently gilded, then you have a 1/33 chance (in /r/lounge) for /u/GoldFact to respond with . . . well, a gold fact!
 
-=
 *(****Note****: Otherwise, anyone else has a 1/999 chance for /u/GoldFact to respond towards your gilded comment.)*
 
 =
