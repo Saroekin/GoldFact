@@ -1,3 +1,8 @@
+# Name: GoldFact (/u/GoldFact)
+# Author: Saroekin (/u/Saroekin)
+# Version: Python 3.4.3
+
+
 #Files or importations that are used elsewhere in program.
 import praw
 import time
@@ -31,6 +36,8 @@ randomNum = 0
 commentNum = 0
 ignore_requests_string = "ignore-/u/goldfact"
 obey_requests_string = "obey-/u/goldfact"
+ignore_authors = []
+cid_storage = []
 
 #Message/link variables.
 ignore_message = "https://www.reddit.com/message/compose/?to=GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact"
@@ -56,9 +63,14 @@ def ignore_requests():
                 sql.commit()
                 callback = message.reply("You have successfully ignored /u/GoldFact.")
                 message.mark_as_read()
-        elif not cur.fetchone():
-        	callback = message.reply("Can't comply, for you have already ignored /u/GoldFact.")
-        	message.mark_as_read()
+        elif cur.fetchone():
+            if message.subject == "username mention" or "comment reply" and type(message) == praw.objects.Comment and ignore_requests_string in message_text:
+                message = "Can't comply, for you have already ignored /u/GoldFact."
+                send_message(mauth, "Error.", message)
+                message.mark_as_read()
+            elif message.subject == "Ignore-/u/GoldFact." and type(message) == praw.objects.Message and ignore_requests_string in message_text:
+                callback = message.reply("Can't comply, for you have already ignored /u/GoldFact.")
+                message.mark_as_read()
 
 #Function for running (is defining) bot.
 #In this definition, we are reapplying /u/GoldFact towards users who request acknowledgement.
@@ -71,17 +83,21 @@ def obey_requests():
         if cur.fetchone():
             if message.subject == "username mention" or "comment reply" and type(message) == praw.objects.Comment and obey_requests_string in message_text:
                 #Removing authors that have been entered into the ignored database.
-                cur.execute('DELETE VALUES(?) FROM total_data', [mauth])
+                cur.execute('DELETE FROM ignore_authors WHERE ID=?', [mauth])
                 sql.commit()
                 message.mark_as_read()
             elif message.subject == "Obey-/u/GoldFact." and type(message) == praw.objects.Message and obey_requests_string in message_text:
-                cur.execute('DELETE VALUES(?) FROM total_data', [mauth])
+                cur.execute('DELETE FROM ignore_authors WHERE ID=?', [mauth])
                 sql.commit()
                 callback = message.reply("You have successfully stopped ignoring /u/GoldFact.")
                 message.mark_as_read()
         elif not cur.fetchone():
-            callback = message.reply("Can't comply, for you haven't ignored /u/GoldFact.")
-            message.mark_as_read()
+            if message.subject == "username mention" or "comment reply" and type(message) == praw.objects.Comment and obey_requests_string in message_text:
+                callback = message.reply("Can't comply, for you haven't ignored /u/GoldFact.")
+                message.mark_as_read()
+            elif message.subject == "Obey-/u/GoldFact." and type(message) == praw.objects.Message and obey_requests_string in message_text:
+                callback = message.reply("Can't comply, for you haven't ignored /u/GoldFact.")
+                message.mark_as_read()
 
 #Function for running (is defining) bot.
 #In this definition, the bot is replying to messages (both username mentions and comment replies).
@@ -96,12 +112,21 @@ def run_bot_messages():
                 message.mark_as_read()  
             elif message.subject == "username mention" and type(message) == praw.objects.Comment:
                 #Selects a random gold fact.
-                randomNum = randint(0,51)
+                randomNum = randint("input num","input num") #: Amount of random numbers taken out so the privacy of /u/GoldFact's fact count is kept exclusive.
                 callback = message.reply("It looks as though I've been summoned! Here's the gold fact as you've requested:" + "\n" + "\n" + ">" + str(goldFactsList[randomNum]) + "\n" + "\n" + "---" + "\n" + "^I ^am ^a ^bot. ^If ^you ^have ^any ^questions ^or ^requests, ^please ^contact ^my ^[[creator](https://www.reddit.com/message/compose/?to=Saroekin&subject=/u/GoldFact)]." + "\n" + "\n" + "^If ^you ^would ^like ^to ^read ^or ^learn ^more ^about ^my ^functionalities, ^please ^head ^over ^to ^this ^[[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)]." + "\n\n" + "^| ^[[Ignore](" + ignore_message + ")] ^| ^[[Obey](" + obey_message + ")] ^| ^[[Source](" + source_link + ")] ^|")
                 message.mark_as_read()
             elif message.subject == "comment reply" and type(message) == praw.objects.Comment and "/u/goldfact" in message_text:
-                randomNum = randint(0,51)
+                randomNum = randint("input num","input num") #: Amount of random numbers taken out so the privacy of /u/GoldFact's fact count is kept exclusive.
                 callback = message.reply("It looks as though I've been summoned! Here's the gold fact as you've requested:" + "\n" + "\n" + ">" + str(goldFactsList[randomNum]) + "\n" + "\n" + "---" + "\n" + "^I ^am ^a ^bot. ^If ^you ^have ^any ^questions ^or ^requests, ^please ^contact ^my ^[[creator](https://www.reddit.com/message/compose/?to=Saroekin&subject=/u/GoldFact)]." + "\n" + "\n" + "^If ^you ^would ^like ^to ^read ^or ^learn ^more ^about ^my ^functionalities, ^please ^head ^over ^to ^this ^[[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)]." + "\n\n" + "^| ^[[Ignore](" + ignore_message + ")] ^| ^[[Obey](" + obey_message + ")] ^| ^[[Source](" + source_link + ")] ^|")
+                message.mark_as_read()
+        elif cur.fetchone():
+            if message.subject == "username mention" and type(message) == praw.objects.Comment:
+                message = '/u/GoldFact couldn\'t respond towards your message, because you have ignored him. If you think this is a mistake, then look upon one of /u/GoldFact\'s post/comments, and click the "Obey" button.\n\n---\nTip: If you\'d like to use /u/GoldFact\'s name without him reacting, then use the command: \n>n-/u/GoldFact'
+                send_message(mauth, "Error.", message)
+                message.mark_as_read()
+            elif message.subject == "comment reply" and type(message) == praw.objects.Comment and "/u/goldfact" in message_text:
+                message = '/u/GoldFact couldn\'t respond towards your message, because you have ignored him. If you think this is a mistake, then look upon one of /u/GoldFact\'s post/comments, and click the "Obey" button. \n\n---\nTip: If you\'d like to use /u/GoldFact\'s name without him reacting, then use the command: \n>n-/u/GoldFact'
+                send_message(mauth, "Error.", message)
                 message.mark_as_read()
 
 #Function for running (is defining) bot.
