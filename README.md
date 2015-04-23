@@ -71,6 +71,7 @@ If would like /u/GoldFact to not respond to at all (even if you mention his name
 
 This will stop /u/GoldFact from replying/commenting towards your gilded comment or being summoned via username mention.
 
+=
 ###Acknowledging /u/GoldFact:
 
 If you accidentally ignored or changed your mind on ignoring /u/GoldFact, then you may reestablish contact with him by using this command via [[message](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] or comment:
