@@ -4,7 +4,7 @@ I hope you find /u/GoldFact entertaining or helpful.
 
 #How /u/GoldFact is used:
 
-###Requesting a gold fact:
+###Requesting a /u/GoldFact:
 
 To call him, use his name in a comment. Like so:
 
@@ -14,6 +14,7 @@ To call him, use his name in a comment. Like so:
 
 Notice that capitalization doesn't affect /u/GoldFact's response. 
 
+=
 *(****Note****: The message/comment could include anything text related. As long as /u/GoldFact is mentioned, he will reply with a gold fact.)*
 
 =
@@ -38,8 +39,12 @@ Full response example:
 =
 ###/u/GoldFact commenting:
 
-If you're comment was recently gilded, then you have a 1/3 chance for /u/GoldFact to respond with . . . well, a gold fact!
+If you're comment was recently gilded, then you have a 1/33 chance (in /r/lounge) for /u/GoldFact to respond with . . . well, a gold fact!
 
+=
+*(****Note****: Otherwise, anyone else has a 1/999 chance for /u/GoldFact to respond towards your gilded comment.)*
+
+=
 His message will have the same format as follows:
 
 >Hello there ol' chap! It seems to me that you've been gilded, therefore congratulations! Here's a gold fact to celebrate:
@@ -54,14 +59,16 @@ His message will have the same format as follows:
 =
 ###Ignoring /u/GoldFact:
 
-If would like /u/GoldFact to not respond to at all (even if you mention his name), then you may comment:
+If would like /u/GoldFact to not respond to at all (even if you mention his name), then you may [[message](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact)] or comment:
+
 >ignore-/u/GoldFact 
 
 This will stop /u/GoldFact from replying/commenting towards your gilded comment or being summoned via username mention.
 
-=
+###Acknowledging /u/GoldFact:
 
-If you accidentally ignored or changed your mind on ignoring /u/GoldFact, then you may reestablish contact with him by using this command:
+If you accidentally ignored or changed your mind on ignoring /u/GoldFact, then you may reestablish contact with him by using this command via [[message](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] or comment:
+
 >obey-/u/GoldFact
 
 #Thanks for reading!
