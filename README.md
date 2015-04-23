@@ -35,7 +35,7 @@ Full response example:
 
 >If you would like to read or learn more about my functionalities, please head over to this [[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)].
 
->| [[Ignore](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact)] | [[Obey](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] | [[Source](https://github.com/Saroekin/GoldFact)] |
+>| [[Ignore](https://www.reddit.com/message/compose/?to=GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact)] | [[Obey](https://www.reddit.com/message/compose/?to=GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] | [[Source](https://github.com/Saroekin/GoldFact)] |
 
 =
 If you'd like to converse or talk about /u/GoldFact without him issuing a fact or comment, then use this command:
@@ -60,7 +60,7 @@ His message will have the same format as follows:
 
 >If you would like to read or learn more about my functionalities, please head over to this [[post](https://www.reddit.com/r/Saroekin_redditBots/comments/339ec5/ugoldfact_information/)].
 
->| [[Ignore](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact)] | [[Obey](https://www.reddit.com/message/compose/?to=/u/GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] | [[Source](https://github.com/Saroekin/GoldFact)] |
+>| [[Ignore](https://www.reddit.com/message/compose/?to=GoldFact&subject=Ignore-/u/GoldFact.&message=ignore-/u/goldfact)] | [[Obey](https://www.reddit.com/message/compose/?to=GoldFact&subject=Obey-/u/GoldFact.&message=obey-/u/goldfact)] | [[Source](https://github.com/Saroekin/GoldFact)] |
 
 =
 ###Ignoring /u/GoldFact:
