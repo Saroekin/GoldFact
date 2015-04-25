@@ -83,8 +83,8 @@ Tip: If you\'d like to use /u/GoldFact's name without him reacting, then use the
 >n-/u/GoldFact
 """.format()
 
-mentionreply = MENTION_TEMPLATE_FACT % goldFactsList[randint(0, (len(goldFactsList))-1)] #Selects random gold fact.
-commentsubmit = COMMENT_TEMPLATE_FACT % goldFactsList[randint(0, (len(goldFactsList))-1)]
+mentionreply = MENTION_TEMPLATE_FACT
+commentsubmit = COMMENT_TEMPLATE_FACT
 notreply = COULD_NOT_REPLY
 
 #Function for running (is defining) bot.
@@ -95,23 +95,23 @@ def ignore_requests():
         if ignore_requests_string not in message_text:
             continue
         mauth = message.author.name
-        message = "You have successfully ignored /u/GoldFact."
+        messageignore = "You have successfully ignored /u/GoldFact."
         #Checking throught SQL database.
         cur.execute('SELECT * FROM ignore_authors WHERE ID=?', [mauth])
         if not cur.fetchone():
             if message.subject in ['username mention', 'comment reply'] and type(message) == praw.objects.Comment:
-                send_message(mauth, "Ignored /u/GoldFact.", message)                
+                r.send_message(mauth, "Ignored /u/GoldFact.", messageignore)                
             elif message.subject == "Ignore-/u/GoldFact." and type(message) == praw.objects.Message:
-                callback = message.reply(message)
+                callback = message.reply(messageignore)
             #Adding authors that wish to be ignored into a database.
             cur.execute('INSERT INTO ignore_authors VALUES(?)', [mauth])
             sql.commit()
             message.mark_as_read()
         else:
             if message.subject in ['username mention', 'comment reply'] and type(message) == praw.objects.Comment:
-                send_message(mauth, "Ignored /u/GoldFact.", message)
+                r.send_message(mauth, "Ignored /u/GoldFact.", messageignore)
             elif message.subject == "Ignore-/u/GoldFact." and type(message) == praw.objects.Message:
-                callback = message.reply(message)
+                callback = message.reply(messageignore)
             message.mark_as_read()
 
 #Function for running (is defining) bot.
@@ -122,23 +122,23 @@ def obey_requests():
         if obey_requests_string not in message_text:
             continue
         mauth = message.author.name
-        message = "You have successfully stopped ignoring /u/GoldFact."
+        messageobey = "You have successfully stopped ignoring /u/GoldFact."
         #Checking throught SQL database.
         cur.execute('SELECT * FROM ignore_authors WHERE ID=?', [mauth])
         if cur.fetchone():
             if message.subject in ['username mention', 'comment reply'] and type(message) == praw.objects.Comment:
-                send_message(mauth, "Acknowledged /u/GoldFact.", message)             
+                r.send_message(mauth, "Acknowledged /u/GoldFact.", messageobey)             
             elif message.subject == "Obey-/u/GoldFact." and type(message) == praw.objects.Message:
-                callback = message.reply(message)
+                callback = message.reply(messageobey)
             #Removing authors that have been entered into the ignored database.
             cur.execute('DELETE FROM ignore_authors WHERE ID=?', [mauth])
             sql.commit()
             message.mark_as_read()
         else:
             if message.subject in ['username mention', 'comment reply'] and type(message) == praw.objects.Comment:
-                send_message(mauth, "Acknowledged /u/GoldFact.", message)
+                r.send_message(mauth, "Acknowledged /u/GoldFact.", messageobey)
             elif message.subject == "Obey-/u/GoldFact." and type(message) == praw.objects.Message:
-                callback = message.reply(message)
+                callback = message.reply(messageobey)
             message.mark_as_read()
 
 #Function for running (is defining) bot.
@@ -153,19 +153,17 @@ def run_bot_messages():
             if message.subject in ['username mention', 'comment reply'] and type(message) == praw.objects.Comment and "n-/u/goldfact" in message_text:
                 message.mark_as_read()  
             elif message.subject == "username mention" and type(message) == praw.objects.Comment:
-                callback = message.reply(mentionreply)
+                callback = message.reply(mentionreply % choice(goldFactsList)) #Selecting a random gold fact.
                 message.mark_as_read()
             elif message.subject == "comment reply" and type(message) == praw.objects.Comment and "/u/goldfact" in message_text:
-                callback = message.reply(mentionreply)
+                callback = message.reply(mentionreply % choice(goldFactsList))
                 message.mark_as_read()
         else:
             if message.subject == "username mention" and type(message) == praw.objects.Comment:
-                message = notreply
-                send_message(mauth, "Error.", message)
+                r.send_message(mauth, "Error.", notreply)
                 message.mark_as_read()
             elif message.subject == "comment reply" and type(message) == praw.objects.Comment and "/u/goldfact" in message_text:
-                message = notreply
-                send_message(mauth, "Error.", message)
+                r.send_message(mauth, "Error.", notreply)
                 message.mark_as_read()
 
 #Function for running (is defining) bot.
@@ -188,7 +186,7 @@ def run_bot_comments_lounge():
             if str(comment.author) != Username:
                 commentNum = randint(0,13)
                 if commentNum == 2:
-                    comment.reply(commentsubmit)
+                    comment.reply(commentsubmit % choice(goldFactsList))
         except AttributeError:
             pass
         #Adding comment id into SQL database.
@@ -215,7 +213,7 @@ def run_bot_comments_all():
             if str(comment.author) != Username:
                 commentNum = randint(0,32)
                 if commentNum == 2:
-                    comment.reply(commentsubmit)
+                    comment.reply(commentsubmit % choice(goldFactsList))
         except AttributeError:
             pass
         #Adding comment id into SQL database.
