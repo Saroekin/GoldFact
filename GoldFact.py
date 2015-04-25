@@ -8,6 +8,7 @@ import os
 import praw
 import time
 import sqlite3
+import traceback
 from random import randint
 from random import choice
 
