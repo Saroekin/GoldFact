@@ -85,8 +85,8 @@ Tip: If you\'d like to use /u/GoldFact's name without him reacting, then use the
 >n-/u/GoldFact
 """.format()
 
-mention = MENTION_TEMPLATE_FACT % randomFact
-comment = COMMENT_TEMPLATE_FACT % randomFact
+mentionreply = MENTION_TEMPLATE_FACT % randomFact
+commentsubmit = COMMENT_TEMPLATE_FACT % randomFact
 notreply = COULD_NOT_REPLY
 
 #Function for running (is defining) bot.
@@ -155,10 +155,10 @@ def run_bot_messages():
             if message.subject in ['username mention', 'comment reply'] and type(message) == praw.objects.Comment and "n-/u/goldfact" in message_text:
                 message.mark_as_read()  
             elif message.subject == "username mention" and type(message) == praw.objects.Comment:
-                callback = message.reply(mention)
+                callback = message.reply(mentionreply)
                 message.mark_as_read()
             elif message.subject == "comment reply" and type(message) == praw.objects.Comment and "/u/goldfact" in message_text:
-                callback = message.reply(mention)
+                callback = message.reply(mentionreply)
                 message.mark_as_read()
         else:
             if message.subject == "username mention" and type(message) == praw.objects.Comment:
@@ -190,7 +190,7 @@ def run_bot_comments_lounge():
             if str(comment.author) != Username:
                 commentNum = randint(0,19)
                 if commentNum == 2:
-                    comment.reply(comment)
+                    comment.reply(commentsubmit)
         except AttributeError:
             pass
         #Adding comment id into SQL database.
@@ -217,7 +217,7 @@ def run_bot_comments_all():
             if str(comment.author) != Username:
                 commentNum = randint(0,39)
                 if commentNum == 2:
-                    comment.reply(comment)
+                    comment.reply(commentsubmit)
         except AttributeError:
             pass
         #Adding comment id into SQL database.
