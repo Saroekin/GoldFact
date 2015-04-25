@@ -83,8 +83,8 @@ Tip: If you\'d like to use /u/GoldFact's name without him reacting, then use the
 >n-/u/GoldFact
 """.format()
 
-mentionreply = MENTION_TEMPLATE_FACT % choice(goldFactsList) #Selects random gold fact.
-commentsubmit = COMMENT_TEMPLATE_FACT % choice(goldFactsList)
+mentionreply = MENTION_TEMPLATE_FACT % goldFactsList[randint(0, (len(goldFactsList))-1)] #Selects random gold fact.
+commentsubmit = COMMENT_TEMPLATE_FACT % goldFactsList[randint(0, (len(goldFactsList))-1)]
 notreply = COULD_NOT_REPLY
 
 #Function for running (is defining) bot.
