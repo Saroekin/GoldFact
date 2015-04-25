@@ -61,7 +61,7 @@ It looks as though I've been summoned! Here's the gold fact as you've requested:
 """.format(pm_link = pm_link, info_post=info_post, ignore_message=ignore_message, obey_message=obey_message, source_link=source_link)
 
 COMMENT_TEMPLATE_FACT = """
-Hello there ol' chap! It seems to me that you've been gilded, therefore congratulations! Here's a gold fact to celebrate:
+Hello there chap! It seems to me that you've been gilded, therefore congratulations! Here's a gold fact to celebrate:
 
 >%s
 
