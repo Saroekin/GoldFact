@@ -34,8 +34,6 @@ goldFactsList = [] #: Shh, secret. Amount of gold facts are hidden for . . . wel
 
 #Set of variables for program.
 print ("Arranging variables...\n\n")
-#Selects a random gold fact.
-randomFact = choice(goldFactsList)
 commentNum = 0
 ignore_requests_string = "ignore-/u/goldfact"
 obey_requests_string = "obey-/u/goldfact"
@@ -85,8 +83,8 @@ Tip: If you\'d like to use /u/GoldFact's name without him reacting, then use the
 >n-/u/GoldFact
 """.format()
 
-mentionreply = MENTION_TEMPLATE_FACT % randomFact
-commentsubmit = COMMENT_TEMPLATE_FACT % randomFact
+mentionreply = MENTION_TEMPLATE_FACT % choice(goldFactList) #Selects random gold fact.
+commentsubmit = COMMENT_TEMPLATE_FACT % choice(goldFactList)
 notreply = COULD_NOT_REPLY
 
 #Function for running (is defining) bot.
