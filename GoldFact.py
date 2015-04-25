@@ -223,8 +223,12 @@ def run_bot_comments_all():
 #Where bot begins (continues) to run.
 print("/u/GoldFact (bot) is running...\n")
 while True:
-    ignore_requests()
-    obey_requests()
-    run_bot_messages()
-    run_bot_comments_lounge()
-    run_bot_comments_all()
+    try:
+        ignore_requests()
+        obey_requests()
+        run_bot_messages()
+        run_bot_comments_lounge()
+        run_bot_comments_all()
+    except Exception as e:
+        traceback.print_exc()
+        time.sleep(30)
