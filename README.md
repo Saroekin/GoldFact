@@ -45,9 +45,9 @@ If you'd like to converse or talk about /u/GoldFact without him issuing a fact o
 =
 ###/u/GoldFact commenting:
 
-If you're comment was recently gilded, then you have a 10% chance (in /r/lounge) for /u/GoldFact to respond with . . . well, a gold fact!
+If you're comment was recently gilded, then you have a 7% chance (in /r/lounge) for /u/GoldFact to respond with . . . well, a gold fact!
 
-*(****Note****: Otherwise, anyone else has a 5% chance for /u/GoldFact to respond towards your gilded comment.)*
+*(****Note****: Otherwise, anyone else has a 3% chance for /u/GoldFact to respond towards your gilded comment.)*
 
 =
 His message will have the same format as follows:
