@@ -83,8 +83,8 @@ Tip: If you\'d like to use /u/GoldFact's name without him reacting, then use the
 >n-/u/GoldFact
 """.format()
 
-mentionreply = MENTION_TEMPLATE_FACT % choice(goldFactList) #Selects random gold fact.
-commentsubmit = COMMENT_TEMPLATE_FACT % choice(goldFactList)
+mentionreply = MENTION_TEMPLATE_FACT % choice(goldFactsList) #Selects random gold fact.
+commentsubmit = COMMENT_TEMPLATE_FACT % choice(goldFactsList)
 notreply = COULD_NOT_REPLY
 
 #Function for running (is defining) bot.
@@ -172,7 +172,7 @@ def run_bot_messages():
 #In this definition, the bot is posting/commenting to gilded comments from /r/lounge (and maybe submissions later on).
 def run_bot_comments_lounge():
     subreddit = r.get_subreddit("lounge")
-    comments = subreddit.get_comments(gilded_only=True, limit=50)
+    comments = subreddit.get_comments(gilded_only=True, limit=100)
     for comment in comments:
         cid = comment.id
         cauth = comment.author.name
