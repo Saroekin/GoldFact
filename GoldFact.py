@@ -186,7 +186,7 @@ def run_bot_comments_lounge():
         try:
             comment_text = comment.body.lower()
             if str(comment.author) != Username:
-                commentNum = randint(0,19)
+                commentNum = randint(0,9)
                 if commentNum == 2:
                     comment.reply(commentsubmit)
         except AttributeError:
@@ -213,7 +213,7 @@ def run_bot_comments_all():
         try:
             comment_text = comment.body.lower()
             if str(comment.author) != Username:
-                commentNum = randint(0,39)
+                commentNum = randint(0,19)
                 if commentNum == 2:
                     comment.reply(commentsubmit)
         except AttributeError:
