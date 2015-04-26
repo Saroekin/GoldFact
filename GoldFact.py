@@ -137,11 +137,7 @@ def obey_requests():
 def run_bot_messages():
     for message in r.get_unread():
         message_text = message.body.lower() 
-        try:
-            mauth = message.author.name
-        except AttributeError:
-            message.mark_as_read()
-            continue
+        mauth = message.author.name
         #Checking throught SQL database.
         cur.execute('SELECT * FROM ignore_authors WHERE ID=?', [mauth])
         if not cur.fetchone(): 
