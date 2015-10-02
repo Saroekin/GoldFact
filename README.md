@@ -85,6 +85,6 @@ If you accidentally ignored or changed your mind on ignoring /u/GoldFact, then y
 If you would like to test /u/GoldFact, then head over to this [[thread](https://www.reddit.com/r/Saroekin_redditBots/comments/339ez3/bot_testing/)].
 
 ---
-Best regards,
+*Best regards,*
 
-Saroekin
+*Saroekin*
